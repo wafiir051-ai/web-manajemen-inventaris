@@ -1,0 +1,78 @@
+body {
+    background-color: #f8fafc;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Sidebar Styling */
+.sidebar-link {
+    transition: all 0.3s ease;
+}
+
+.sidebar-link:hover {
+    background-color: #f1f5f9;
+    transform: translateX(4px);
+}
+
+.sidebar-link.active {
+    background-color: rgba(79, 70, 229, 0.08);
+    color: #4F46E5;
+    border-right: 4px solid #4F46E5;
+    font-weight: 600;
+}
+
+/* Scroll Reveal Animations */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.delay-100 {
+    transition-delay: 100ms;
+}
+
+.delay-200 {
+    transition-delay: 200ms;
+}
+
+.delay-300 {
+    transition-delay: 300ms;
+}
+
+.delay-400 {
+    transition-delay: 400ms;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 10px;
+}
+
+/* Timeline specific lines */
+.timeline-line::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 1.25rem;
+    /* Menyesuaikan dengan pl-5 */
+    width: 2px;
+    background: #e2e8f0;
+    /* slate-200 */
+    z-index: 0;
+}

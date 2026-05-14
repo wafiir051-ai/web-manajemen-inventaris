@@ -1,0 +1,64 @@
+body {
+    background-color: #f8fafc;
+}
+
+/* Sidebar Styling */
+.sidebar-link {
+    transition: all 0.3s ease;
+}
+
+.sidebar-link:hover {
+    background-color: #f1f5f9;
+    transform: translateX(4px);
+}
+
+.sidebar-link.active {
+    background-color: rgba(79, 70, 229, 0.08);
+    color: #4F46E5;
+    border-right: 4px solid #4F46E5;
+    font-weight: 600;
+}
+
+/* Scroll Reveal Animations */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Delay Utilities for staggered animations */
+.delay-100 {
+    transition-delay: 100ms;
+}
+
+.delay-200 {
+    transition-delay: 200ms;
+}
+
+.delay-300 {
+    transition-delay: 300ms;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}

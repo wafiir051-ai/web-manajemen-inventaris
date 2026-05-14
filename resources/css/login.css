@@ -1,0 +1,31 @@
+/* Animasi Muncul Smooth */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Dekorasi Latar Belakang Blur */
+.blob {
+    position: absolute;
+    filter: blur(80px);
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/* Styling Fokus Input */
+input:focus {
+    outline: none;
+    border-color: #4F46E5;
+    box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.1);
+}
