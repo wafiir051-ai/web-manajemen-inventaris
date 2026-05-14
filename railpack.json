@@ -1,7 +1,0 @@
-{
-  "providers": ["php"],
-  "php": {
-    "version": "8.4",
-    "extensions": ["gd", "pdo", "pdo_mysql", "mbstring", "xml", "tokenizer", "bcmath", "curl", "zip"]
-  }
-}
